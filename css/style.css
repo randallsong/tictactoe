@@ -17,15 +17,15 @@ body {
 .ximage {
   width: 190px;
   height: 190px;
-  position: relative;
-  margin: 10%;
+  position: absolute;
+  margin: 30px;
   display: none; }
 
 .oimage {
   width: 190px;
   height: 190px;
   position: relative;
-  margin: 10%;
+  margin: 30px;
   display: none; }
 
 /*# sourceMappingURL=style.css.map */
