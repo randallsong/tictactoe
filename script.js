@@ -2,6 +2,8 @@
 //function that takes into account whose turn it is and changes
 //the square accordingly
 
+
+
 var turn = 0;
 
 var box1 = "undefined";
@@ -134,7 +136,7 @@ tictactoe.prototype.clickBox9 = function(){
 
 tictactoe.prototype.checkWinner = function(){
 	if(box1 == "x" && box2 == "x" && box3 == "x"){
-		alert("player 1 is the winner!")
+		alert(document.getElementById('player1').value + " is the winner!")
 		window.location.reload();
 	}else if(box4 == "x" && box5 == "x" && box6 == "x"){
 		alert("player 1 is the winner!")
@@ -185,8 +187,10 @@ tictactoe.prototype.checkWinner = function(){
 	}
 }
 
-var newGame = new tictactoe()
+//checks every possible row of 3 and displays an alert to announce the winner,
+//then refreshes the page
 
+var newGame = new tictactoe()
 
 document.getElementById('box1').onclick = function(){
 	newGame.clickBox1();
@@ -232,6 +236,7 @@ document.getElementById('box9').onclick = function(){
 	newGame.clickBox9();
 	newGame.checkWinner();
 }
+
 //maybe give each square a status of blank, X, or O, then check the
 //possibilities
 
