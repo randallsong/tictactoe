@@ -15,7 +15,7 @@ var box6 = "undefined";
 var box7 = "undefined";
 var box8 = "undefined";
 var box9 = "undefined";
-var player1 = document.getElementById('player1').value
+var player1 = document.getElementById('player1').value;
 
 //fuck arrays they don't work
 
@@ -185,6 +185,9 @@ tictactoe.prototype.checkWinner = function(){
 	}else if(box3 == "o" && box5 == "o" && box7 == "o"){
 		alert("player 2 is the winner!")
 		window.location.reload();
+	}else if(box1 !== "undefined" && box2 !== "undefined" && box3 !== "undefined" && box4 !== "undefined" && box5 !== "undefined" && box6 !== "undefined" && box7 !== "undefined" && box8!== "undefined" && box9 !== "undefined"){
+	alert('Wow you filled the board! You must be pretty good a this! Play again?');
+	window.location.reload();
 	}
 }
 
@@ -192,10 +195,7 @@ tictactoe.prototype.checkWinner = function(){
 //then refreshes the page
 
 tictactoe.prototype.checkDraw = function(){
-	if(box1 !== "undefined" && box2 !== "undefined" && box3 !== "undefined" && box4 !== "undefined" && box5 !== "undefined" && box6 !== "undefined" && box7 !== "undefined" && box8!== "undefined" && box9 !== "undefined"){
-	alert('draw!');
-	window.location.reload();
-	}
+	
 }
 
 //checks after every click if there is a draw
