@@ -186,7 +186,7 @@ tictactoe.prototype.checkWinner = function(){
 		alert("player 2 is the winner!")
 		window.location.reload();
 	}else if(box1 !== "undefined" && box2 !== "undefined" && box3 !== "undefined" && box4 !== "undefined" && box5 !== "undefined" && box6 !== "undefined" && box7 !== "undefined" && box8!== "undefined" && box9 !== "undefined"){
-	alert('Wow you filled the board! You must be pretty good a this! Play again?');
+	alert('Wow you filled the board! You must be pretty good at this! Play again?');
 	window.location.reload();
 	}
 }
@@ -194,9 +194,6 @@ tictactoe.prototype.checkWinner = function(){
 //checks every possible row of 3 and displays an alert to announce the winner,
 //then refreshes the page
 
-tictactoe.prototype.checkDraw = function(){
-	
-}
 
 //checks after every click if there is a draw
 
@@ -206,55 +203,46 @@ var newGame = new tictactoe()
 document.getElementById('box1').onclick = function(){
 	newGame.clickBox1();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box2').onclick = function(){
 	newGame.clickBox2();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box3').onclick = function(){
 	newGame.clickBox3();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box4').onclick = function(){
 	newGame.clickBox4();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box5').onclick = function(){
 	newGame.clickBox5();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box6').onclick = function(){
 	newGame.clickBox6();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box7').onclick = function(){
 	newGame.clickBox7();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box8').onclick = function(){
 	newGame.clickBox8();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 document.getElementById('box9').onclick = function(){
 	newGame.clickBox9();
 	newGame.checkWinner();
-	newGame.checkDraw();
 }
 
 //maybe give each square a status of blank, X, or O, then check the
