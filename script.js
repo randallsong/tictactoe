@@ -135,37 +135,53 @@ tictactoe.prototype.clickBox9 = function(){
 tictactoe.prototype.checkWinner = function(){
 	if(box1 == "x" && box2 == "x" && box3 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box4 == "x" && box5 == "x" && box6 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box7 == "x" && box8 == "x" && box9 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box1 == "x" && box4 == "x" && box7 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box2 == "x" && box5 == "x" && box8 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box3 == "x" && box6 == "x" && box9 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box1 == "x" && box5 == "x" && box9 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}else if(box3 == "x" && box5 == "x" && box7 == "x"){
 		alert("player 1 is the winner!")
+		window.location.reload();
 	}
 	if(box1 == "o" && box2 == "o" && box3 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box4 == "o" && box5 == "o" && box6 == "x"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box7 == "o" && box8 == "o" && box9 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box1 == "o" && box4 == "o" && box7 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box2 == "o" && box5 == "o" && box8 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box3 == "o" && box6 == "o" && box9 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box1 == "o" && box5 == "o" && box9 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}else if(box3 == "o" && box5 == "o" && box7 == "o"){
-		alert("player 1 is the winner!")
+		alert("player 2 is the winner!")
+		window.location.reload();
 	}
 }
 
