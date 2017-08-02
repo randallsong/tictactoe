@@ -2,6 +2,8 @@
 //function that takes into account whose turn it is and changes
 //the square accordingly
 
+
+
 var turn = 0;
 
 var box1 = "undefined";
@@ -13,6 +15,7 @@ var box6 = "undefined";
 var box7 = "undefined";
 var box8 = "undefined";
 var box9 = "undefined";
+var player1 = document.getElementById('player1').value
 
 //fuck arrays they don't work
 
@@ -134,7 +137,7 @@ tictactoe.prototype.clickBox9 = function(){
 
 tictactoe.prototype.checkWinner = function(){
 	if(box1 == "x" && box2 == "x" && box3 == "x"){
-		alert("player 1 is the winner!")
+		alert(player1 + " is the winner!")
 		window.location.reload();
 	}else if(box4 == "x" && box5 == "x" && box6 == "x"){
 		alert("player 1 is the winner!")
@@ -161,7 +164,7 @@ tictactoe.prototype.checkWinner = function(){
 	if(box1 == "o" && box2 == "o" && box3 == "o"){
 		alert("player 2 is the winner!")
 		window.location.reload();
-	}else if(box4 == "o" && box5 == "o" && box6 == "x"){
+	}else if(box4 == "o" && box5 == "o" && box6 == "o"){
 		alert("player 2 is the winner!")
 		window.location.reload();
 	}else if(box7 == "o" && box8 == "o" && box9 == "o"){
@@ -185,53 +188,75 @@ tictactoe.prototype.checkWinner = function(){
 	}
 }
 
-var newGame = new tictactoe()
+//checks every possible row of 3 and displays an alert to announce the winner,
+//then refreshes the page
 
+tictactoe.prototype.checkDraw = function(){
+	if(box1 !== "undefined" && box2 !== "undefined" && box3 !== "undefined" && box4 !== "undefined" && box5 !== "undefined" && box6 !== "undefined" && box7 !== "undefined" && box8!== "undefined" && box9 !== "undefined"){
+	alert('draw!');
+	window.location.reload();
+	}
+}
+
+//checks after every click if there is a draw
+
+
+var newGame = new tictactoe()
 
 document.getElementById('box1').onclick = function(){
 	newGame.clickBox1();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box2').onclick = function(){
 	newGame.clickBox2();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box3').onclick = function(){
 	newGame.clickBox3();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box4').onclick = function(){
 	newGame.clickBox4();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box5').onclick = function(){
 	newGame.clickBox5();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box6').onclick = function(){
 	newGame.clickBox6();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box7').onclick = function(){
 	newGame.clickBox7();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box8').onclick = function(){
 	newGame.clickBox8();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
 
 document.getElementById('box9').onclick = function(){
 	newGame.clickBox9();
 	newGame.checkWinner();
+	newGame.checkDraw();
 }
+
 //maybe give each square a status of blank, X, or O, then check the
 //possibilities
 

@@ -28,4 +28,8 @@ body {
   margin: 30px;
   display: none; }
 
+form {
+  position: absolute;
+  left: 40px; }
+
 /*# sourceMappingURL=style.css.map */
