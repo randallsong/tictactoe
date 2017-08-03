@@ -32,4 +32,22 @@ form {
   position: absolute;
   left: 40px; }
 
+#pinkie {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  widows: 378px;
+  height: 528.5px;
+  bottom: 0px;
+  right: 0px; }
+
+#pinkie2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  widows: 378px;
+  height: 528.5px;
+  bottom: 0px;
+  right: 0px; }
+
 /*# sourceMappingURL=style.css.map */
